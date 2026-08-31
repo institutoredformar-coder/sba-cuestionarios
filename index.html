@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SBA - Cuestionarios Asistidos</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <!-- Estilo Visual -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #0d47a1; /* Azul institucional */
+    }
+    .sidebar-nav strong { color: var(--theme-color); }
+  </style>
+</head>
+<body>
+  <div id="app">Cargando el Portal de Cuestionarios SBA...</div>
+
+  <script>
+    window.$docsify = {
+      name: 'SBA Cuestionarios',
+      repo: '',
+      loadNavbar: true,       // Carga el menú superior (_navbar.md)
+      loadSidebar: true,      // Carga el menú lateral (_sidebar.md)
+      auto2top: true,         // Sube al inicio al cambiar de página
+      subMaxLevel: 3,         // Muestra subtítulos en el menú
+      
+      // Buscador interno potente
+      search: {
+        placeholder: '🔍 Buscar tema, autor o pregunta...',
+        noData: 'No se encontraron resultados',
+        depth: 6
+      }
+    }
+  </script>
+
+  <!-- Motor principal de Docsify -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- Plugin: Buscador global de texto -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <!-- Plugin: Botón de copiar código/texto -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
